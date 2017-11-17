@@ -1,9 +1,9 @@
 /*
- * @file ZeusSwitcher.c
+ * @file ZeusCollector.c
  * @brief 
  * @author 
  * @date 17/11/17.
  * @version 1.0
  */
 
-#include "ZeusSwitcher.h"
+#include "ZeusCollector.h"
