@@ -1,9 +1,9 @@
 /*
- * @file ApollonSwitcher.c
+ * @file ApollonDataSender.c
  * @brief 
  * @author 
  * @date 17/11/17.
  * @version 1.0
  */
 
-#include "ApollonSwitcher.h"
+#include "ApollonDataSender.h"
