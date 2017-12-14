@@ -31,13 +31,27 @@ extern void switcherDestroy();
  * @brief setter of the UV rate
  * @param UV rate
  */
-extern void setUV(int UV);
+extern void setUV(uint8_t UV);
 
 /**
  * @function extern void setBrightness(int brightness)
  * @brief setter of the brightness rate
  * @param brightness rate
  */
-extern void setBrightness(int brightness);
+extern void setBrightness(uint32_t brightness);
+
+/**
+ * @function extern int getUV()
+ * @return UV value
+ */
+extern uint8_t getUV();
+
+/**
+ * @function extern int getUV()
+ * @return UV value
+ */
+extern uint32_t getBrightness();
+
+
 
 #endif //CODE_APOLLONSWITCHER_H

@@ -22,9 +22,9 @@ extern void dataSenderInit();
 extern void dataSenderDestroy();
 
 /**
- * @function extern void sendData(char[])
+ * @function extern void sendData()
  * @brief sends the data to the Nucleus
  */
-extern void sendData(char[]);
+extern void sendData();
 
 #endif //CODE_APOLLONDATASENDER_H

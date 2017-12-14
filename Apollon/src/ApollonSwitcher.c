@@ -12,7 +12,8 @@
 static const SLEEPING_TIME = 1000;
 
 //TODO
-static int apollonUV, apollonBrightness;
+static uint8_t apollonUV;
+static uint32_t apollonBrightness;
 
 
 
@@ -161,7 +162,7 @@ extern void switcherDestroy()
 /**
  * See ApollonSwitcher.h
  */
-extern void setUV(int UV)
+extern void setUV(uint8_t UV)
 {
     apollonUV = UV;
 }
@@ -169,10 +170,25 @@ extern void setUV(int UV)
 /**
  * See ApollonSwitcher.h
  */
-extern void setBrightness(int brightness)
+extern void setBrightness(uint32_t brightness)
 {
     apollonBrightness = brightness;
 }
+
+/**
+ * See ApollonSwitcher.h
+ */
+extern uint32_t getBrightness(){
+    return apollonBrightness;
+}
+
+/**
+ * See ApollonSwitcher.h
+ */
+extern uint8_t getUV(){
+    return apollonUV;
+}
+
 
 
 
