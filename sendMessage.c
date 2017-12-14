@@ -6,7 +6,7 @@
 #include "reg24le1.h"
 #include "stdlib.h"
 #include "string.h"
-#include "apollonMessage.h"
+#include "testHadesMessage.h"
 #include "rf.h"
 #include "gpio.h"
 #include "timer0.h"
@@ -22,16 +22,18 @@
 #define ADDRESS_LENGTH 5
 #define NUCLEUS_ADDRESS ((uint8_t)0xC0000)
 #define THIS_APOLLON_ADDRESS ((uint8_t)0x01) // This address
-#define NUMBER_OF_BYTE_SENT 7
+#define NUMBER_OF_BYTE_SENT_APOLLON 7
 #define CE_PULSE_LENGTH	10
 
-MyMessage outMsg;
+apollonMessage_u outMsg;
 
 
 void BuildMessage() {
     outMsg.sender = THIS_APOLLON_ADDRESS;
     outMsg.MessageType = 0;             // Zero referes to an Apollon module
-    outMsg.uvValue = getUV();
+
+    //TODO Pour les tests, donner des valeurs factices.
+    outMsg.uvValue = getUV();           // From apollonSwitcher
     outMsg.brigthValue = getBrigthness();
 }
 

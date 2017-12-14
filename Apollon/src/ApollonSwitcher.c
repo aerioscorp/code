@@ -17,8 +17,6 @@ static uint32_t apollonBrightness;
 
 
 
-
-
 /* Generates the states of the state-machine */
 #define STATE_GENERATION S(S_FORGET) S(S_INIT) S(S_SLEEPING)                  //TODO
 #define S(x) x,

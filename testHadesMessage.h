@@ -1,17 +1,14 @@
-/*
- * @file HadesDataReceiver.c
- * @brief TODO
- * @author TODO
- * @date 17/11/17.
- * @version 1.0
- */
+//
+// Created by sami on 14/12/17.
+//
 
-#include "HadesDataReceiver.h"
+#ifndef PFE_TESTMESSAGE_H
+#define PFE_TESTMESSAGE_H
 
-static const uint8_t APOLLON_TYPE = 0;
-static const uint8_t ATHENA_TYPE = 1;
-static const uint8_t HERMES_TYPE = 2;
-static const uint8_t ZEUS_TYPE = 3;
+
+#define MAX_MESSAGE_LENGTH	(32u)	//!< The maximum size of a message (including header)
+#define HEADER_SIZE			(2u)	//!< The size of the header
+#define MAX_PAYLOAD (MAX_MESSAGE_LENGTH - HEADER_SIZE) //!< The maximum size of a payload depends of MAX_MESSAGE_LENGTH and HEADER_SIZE
 
 /**
  * Messages coming from Apollon
@@ -87,6 +84,7 @@ typedef struct {
     messageType_u message;
 }messageType_t;
 
+
 /**
  * Message sent and received
  */
@@ -95,30 +93,4 @@ typedef union {
     uint8_t array[HEADER_SIZE + MAX_PAYLOAD + 1];
 } message_u;
 
-
-
-
-/**
- * See HadesDataReceiver.h
- */
-extern void dataSenderInit()
-{
-    //TODO
-}
-
-/**
- * See HadesDataReceiver.h
- */
-extern void dataSenderDestroy()
-{
-    //TODO
-}
-
-/**
- * See HadesDataReceiver.h
- */
-extern char[] receiveData()
-{
-    //TODO
-
-}
+#endif //PFE_TESTMESSAGE_H

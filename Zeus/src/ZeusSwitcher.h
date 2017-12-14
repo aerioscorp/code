@@ -13,16 +13,15 @@
 #include "ZeusDataSender.h"
 #include "ZeusReanimator.h"
 
-typedef enum {
-    NORTH=0,
-    NORTH_EAST,
-    EAST,
-    SOUTH_EAST,
-    SOUTH,
-    SOUTH_WEST,
-    WEST,
-    NORTH_WEST
-}Direction;
+uint8_t NORTH=0;
+uint8_t NORTH_EAST=1;
+uint8_t EAST=2;
+uint8_t SOUTH_EAST=3;
+uint8_t SOUTH=4;
+uint8_t SOUTH_WEST=5;
+uint8_t WEST=6;
+uint8_t NORTH_WEST=7;
+
 
 /**
  * @function extern void switcherInit()
@@ -51,11 +50,11 @@ extern void setPrecipitation(int precipitation);
 extern void setWindSpeed(int windSpeed);
 
 /**
- * @function extern void setWindDirection(Direction windDirection)
+ * @function extern void setWindDirection(uint8_t windDirection)
  * @brief setter of the wind direction
  * @param windDirection the direction of the wind
  */
-extern void setWindDirection(Direction windDirection);
+extern void setWindDirection(uint8_t windDirection);
 
 /**
  * @function extern void setPM10(int PM10)

@@ -182,7 +182,7 @@ extern void setWindSpeed(int windSpeed)
 /**
  * See ApollonSwitcher.h
  */
-extern void setWindDirection(Direction windDirection)
+extern void setWindDirection(uint8_t windDirection)
 {
     zeusWindDirection = windDirection;
 }
