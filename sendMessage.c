@@ -1,7 +1,7 @@
 //
 // Created by sami on 07/12/17.
 //
-
+ //TODO NON FONCTIONNEL
 
 #include "reg24le1.h"
 #include "stdlib.h"
@@ -15,7 +15,7 @@
 #include "testHadesMessage.h"
 
 
-#define RF24_CHANNEL	   	78
+#define RF24_CHANNEL	   	84
 #define RF24_DATARATE 	   	RF_RF_SETUP_RF_DR_250_KBPS
 #define RF24_PA_LEVEL 	   	RF_RF_SETUP_RF_PWR_0_DBM
 #define ADDRESS_LENGTH 5
