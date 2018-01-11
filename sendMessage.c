@@ -6,26 +6,25 @@
 #include "reg24le1.h"
 #include "stdlib.h"
 #include "string.h"
-#include "testHadesMessage.h"
 #include "rf.h"
 #include "gpio.h"
 #include "timer0.h"
 #include "interrupt.h"
 #include "memory.h"
 #include "adc.h"
-#include "apollonSwitcher.h"
+#include "testHadesMessage.h"
 
 
-#define RF24_CHANNEL	   	76
+#define RF24_CHANNEL	   	78
 #define RF24_DATARATE 	   	RF_RF_SETUP_RF_DR_250_KBPS
 #define RF24_PA_LEVEL 	   	RF_RF_SETUP_RF_PWR_0_DBM
 #define ADDRESS_LENGTH 5
 #define NUCLEUS_ADDRESS ((uint8_t)0xC0000)
-#define THIS_APOLLON_ADDRESS ((uint8_t)0x01) // This address
-#define NUMBER_OF_BYTE_SENT_APOLLON 7
+#define THIS_APOLLON_ADDRESS ((uint8_t)0x01) //! APOLLON This address
+#define NUMBER_OF_BYTE_SENT_APOLLON 7  //! APOLLON This address
 #define CE_PULSE_LENGTH	10
 
-apollonMessage_u outMsg;
+message_u outMsg;
 
 
 void BuildMessage() {
@@ -33,8 +32,11 @@ void BuildMessage() {
     outMsg.MessageType = 0;             // Zero referes to an Apollon module
 
     //TODO Pour les tests, donner des valeurs factices.
-    outMsg.uvValue = getUV();           // From apollonSwitcher
-    outMsg.brigthValue = getBrigthness();
+   /** outMsg.uvValue = getUV();           //! APOLLON From apollonSwitcher
+    outMsg.brigthValue = getBrigthness();*/
+
+    outMsg.uvValue = 12;
+    outMsg.brigthValue = 254;
 }
 
 
@@ -120,15 +122,15 @@ inline void setup() {
 
 
 
-//TODO
+//! POUR TESTS
 void main(){
     setup();
     while(1) {
         BuildMessage();
         SendMessage();
 
-        // process / wait
-        process_time(2000);
+        //TODO Mettre un Wait ? Ou non ?
+
     }
 }
 

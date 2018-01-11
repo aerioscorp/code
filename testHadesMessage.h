@@ -80,6 +80,14 @@ typedef union {
 
 typedef struct {
     uint8_t sender;          	 // 8 bit - Id of sender (origin)
+    uint8_t destination;     	 // 8 bit - Id of destination node
+    uint8_t version_length;		 // 2 bit - Protocol version
+    // 1 bit - Signed flag
+    // 5 bit - Length of payload
+    uint8_t command_ack_payload; // 3 bit - Command type
+    // 1 bit - Request an ack - Indicator that receiver should send an ack back.
+    // 1 bit - Is ack messsage - Indicator that this is the actual ack message.
+    // 3 bit - Payload data type
     uint8_t messageType;
     messageType_u message;
 }messageType_t;

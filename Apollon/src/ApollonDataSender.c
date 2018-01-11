@@ -57,7 +57,7 @@ extern void dataSenderDestroy()
 /**
  * See ApollonDataSender.h
  */
-extern void sendData(char[])
+extern void sendData()
 {
     //TODO
 }
