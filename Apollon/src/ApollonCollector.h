@@ -12,18 +12,6 @@
 #include "ApollonSwitcher.h"
 
 /**
- * @function extern void collectorInit()
- * @brief creates the collector
- */
-extern void collectorInit();
-
-/**
- * @function extern void collectorDestroy()
- * @brief destroys the collector
- */
-extern void collectorDestroy();
-
-/**
  * @function extern void launchCollector()
  * @brief launch the measurement of ApollonCollector
  */

@@ -1,57 +1,30 @@
 /*
  * @file ApollonDataSender.c
  * @brief TODO
- * @author TODO
+ * @author Sami KOUATLI
  * @date 17/11/17.
  * @version 1.0
  */
 
 #include "ApollonDataSender.h"
-
-#define NUMBER_OF_BYTE_SENT_APOLLON 7
-
-const static uint8_t APOLLON_TYPE = 0;
-
-typedef struct {
-    uint8_t uvValue;            // Valeur entre 1 et 15;
-    uint32_t brigthValue;      //Valeur entre 0.001 et 150 000
-}apollonMessage_t;
-
-typedef union {
-    apollonMessage_t apollonMessageStruct;
-    char data[MAX_PAYLOAD + 1];
-}apollonMessage_u;
+#include "/lib/nRF24LE1_POC_TEKKA.c"
 
 
-typedef struct {
-    uint8_t sender;          	 // 8 bit - Id of sender (origin)
-    uint8_t messageType;
-    apollonMessage_u message;
-}messageType_t;
-
-/**
- * Message sent and received
- */
-typedef union {
-    messageType_t message;
-    uint8_t array[HEADER_SIZE + MAX_PAYLOAD + 1];
-} message_u;
-
+#define CHILD_ID_APOLLON 0
+#define CHILD_ID_APOLLON_DESCRIPTION_CONNECT "apollonConnect"
+#define CHILD_ID_APOLLON_DESCRIPTION_DISCONNECT "apollonDisconnect
 
 /**
  * See ApollonDataSender.h
  */
 extern void dataSenderInit()
 {
-    //TODO
-}
+    setRF24_CHANNEL(84);
+    uint8_t base_addr[5] = {0xFF,0xFC,0xE1,0xA8,0xA8};
+    setBaseAddress(base_addr);
 
-/**
- * See ApollonDataSender.h
- */
-extern void dataSenderDestroy()
-{
-    //TODO
+    setup();
+    present(CHILD_ID_APOLLON, S_CUSTOM, CHILD_ID_APOLLON_DESCRIPTION_CONNECT);
 }
 
 /**
@@ -59,5 +32,26 @@ extern void dataSenderDestroy()
  */
 extern void sendData()
 {
-    //TODO
+    // init
+    setup(); //TODO Necessaire ?
+    // loop
+    while(1) {
+
+        watchdog_calc_timeout_from_sec(3);
+
+        /** pour Apollon : */
+
+        //UV
+        outMsg.bValue = getUV();
+        BuildMessage(GATEWAY_ADDRESS,CHILD_ID_APOLLON,C_SET,V_UV, P_BYTE,4,false);
+        SendMessage();
+
+        //Bright
+        outMsg.ulValue = getBrightness();
+        BuildMessage(GATEWAY_ADDRESS,CHILD_ID_APOLLON,C_SET,V_LIGHT_LEVEL,P_ULONG32,4+1,false);
+        SendMessage();
+
+        // process / wait
+        process_time(2000);
+    }
 }

@@ -1,21 +1,15 @@
 /*
  * @file ApollonSwitcher.c
  * @brief TODO
- * @author Sami
+ * @author Sami KOUATLI
  * @date 17/11/17.
  * @version 1.0
  */
 
 #include "ApollonSwitcher.h"
 
-//TODO
-static const SLEEPING_TIME = 1000;
-
-//TODO
 static uint8_t apollonUV;
 static uint32_t apollonBrightness;
-
-
 
 /* Generates the states of the state-machine */
 #define STATE_GENERATION S(S_FORGET) S(S_IDLE) S(S_INIT) S(S_COLLECT) S(S_SEND) S(S_SLEEP)
@@ -80,32 +74,11 @@ static transition_s mySm [STATE_NB_POSTMAN] =
                 [S_SLEEP]={S_COLLECT,A_COLLECT}
         };
 
-//TODO A Utiliser pour tester puis à supprimer
-/*
-static const char * actionGetName(int i)
-{
-    return actionName[i];
-}
-
-static const char * eventGetName(int i)
-{
-    return eventName[i];
-}
-
-static const char * stateGetName(int i)
-{
-    return stateName[i];
-}
-*/
-
-
-
 /**
  * See ApollonSwitcher.h
  */
 extern void switcherInit()
 {
-    //TODO Initialisation ?
     switcherState = S_IDLE;
     switcherRun();
 }
@@ -115,8 +88,8 @@ extern void switcherInit()
  */
 extern void switcherDestroy()
 {
+    reanimatorDestroy();
     switcherState = S_DEATH;
-    //TODO Autre chose à faire ?
 }
 
 /**
@@ -152,8 +125,6 @@ extern uint8_t getUV(){
 
 
 
-
-
 /**
  * @function static void switcherRun()
  * @brief manages the state-machine of switcherApollon
@@ -163,17 +134,12 @@ extern uint8_t getUV(){
 static void switcherRun()
 {
     action_e act;
-   // printf("postman MAE started@n");
     while (switcherState != S_DEATH)
     {
         if (mySm[switcherState].destinationState != S_FORGET)
         {
-           // printf("[SWITCHER] Evenement %s@n", stateGetName(msg.event));          //TODO Enlever les commentaires
-           // printf("[SWITCHER] En changement @n");
             act = mySm[postmanState].action;
-           // printf("[SWITCHER] Action %s@n", actionGetName(act));
             postmanState = mySm[postmanState].destinationState;
-            //printf("[SWITCHER] changement état %s@n", stateGetName(switcherState));
             actionTabPostman[act]();
         }
     }
@@ -187,8 +153,6 @@ static void switcherRun()
  * @return void
  */
 void actionStart(){
-    //TODO Appelez les destructeurs avant ?
-    collectorInit();
     reanimatorInit();
     dataSenderInit();
 }
@@ -210,7 +174,6 @@ void actionCollect(){
  * @return void
  */
 void actionSend(){
-    reorganize();
     sendData();
 }
 
@@ -222,15 +185,5 @@ void actionSend(){
  */
 void actionSleep(){
     putSleepMode();
-    //TODO Timer 15 min SLEEPING_TIME
     putActiveMode();
-}
-
-/**
- * @function static void reorganize()
- * @brief organizes the data to be "ready to send"
- */
-static void reorganize()
-{
-    //TODO
 }

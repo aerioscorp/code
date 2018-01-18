@@ -12,7 +12,8 @@
 
 
 #define CHILD_ID_APOLLON 0
-#define CHILD_ID_APOLLON_DESCRIPTION "apollon"
+#define CHILD_ID_APOLLON_DESCRIPTION_CONNECT "apollonConnect"
+#define CHILD_ID_APOLLON_DESCRIPTION_DISCONNECT "apollonDisconnect"
 #define CHILD_ID_ATHENA 1
 #define CHILD_ID_ATHENA_DESCRIPTION "athena"
 #define NODE_ID AUTO
@@ -27,7 +28,6 @@
 
 // LSB first
 uint8_t base_addr[5] = {0xFF,0xFC,0xE1,0xA8,0xA8};
-int16_t temperature,humidity;
 
 #define GATEWAY_ADDRESS ((uint8_t)0x00)
 #define BROADCAST_ADDRESS ((uint8_t)0xFF)

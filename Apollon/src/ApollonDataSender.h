@@ -16,12 +16,6 @@
 extern void dataSenderInit();
 
 /**
- * @function extern void dataSenderDestroy()
- * @brief destroys the dataSender
- */
-extern void dataSenderDestroy();
-
-/**
  * @function extern void sendData()
  * @brief sends the data to the Nucleus
  */
