@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Poseidon</string>
+    <string name="title_activity_sampler">Sampler</string>
+    <string name="url">http://172.17.1.62/phpmyadmin/getData.php</string>
+</resources>

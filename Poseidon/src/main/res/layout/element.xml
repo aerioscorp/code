@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Data title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/data_title"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:background="@color/common_action_bar_splitter"
+            android:shadowRadius="10"
+            android:layout_marginRight="2dp" />
+
+        <TextView
+            android:text="Data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/data"
+            android:layout_toRightOf="@+id/data_title"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:background="@drawable/back"
+            android:layout_marginLeft="2dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
