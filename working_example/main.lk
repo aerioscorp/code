@@ -1,0 +1,20 @@
+-muwx
+-i main.ihx
+-M
+-Y
+-b HOME = 0x0000
+-b XSEG = 0x0001
+-b PSEG = 0x0001
+-b ISEG = 0x0000
+-b BSEG = 0x0000
+-k ../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib
+-k c:\Program Files (x86)\SDCC\bin\..\lib\large
+-l nrf24le1
+-l mcs51
+-l libsdcc
+-l libint
+-l liblong
+-l libfloat
+main.rel
+
+-e

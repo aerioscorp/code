@@ -1,0 +1,608 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000000  l_BIT_BANK                      
+C:   00000000  l_BSEG                          
+C:   00000000  l_BSEG_BYTES                    
+C:   00000000  l_CABS                          
+C:   00000000  l_CONST                         
+C:   00000000  l_GSINIT                        
+C:   00000000  l_GSINIT1                       
+C:   00000000  l_GSINIT5                       
+C:   00000000  l_IABS                          
+C:   00000000  l_ISEG                          
+C:   00000000  l_OSEG                          
+C:   00000000  l_PSEG                          
+C:   00000000  l_REG_BANK_1                    
+C:   00000000  l_REG_BANK_2                    
+C:   00000000  l_REG_BANK_3                    
+C:   00000000  l_RSEG                          
+C:   00000000  l_RSEG0                         
+C:   00000000  l_RSEG1                         
+C:   00000000  l_XABS                          
+C:   00000000  l__CODE                         
+C:   00000000  s_BSEG                          
+C:   00000000  s_CABS                          
+C:   00000000  s_DSEG                          
+C:   00000000  s_HOME                          
+C:   00000000  s_IABS                          
+C:   00000000  s_ISEG                          
+C:   00000000  s_REG_BANK_0                    
+C:   00000000  s_RSEG                          
+C:   00000000  s_RSEG0                         
+C:   00000000  s_RSEG1                         
+C:   00000000  s_XABS                          
+C:   00000001  s_PSEG                          
+C:   00000001  s_XSEG                          
+C:   00000003  l_GSFINAL                       
+C:   00000003  l_GSINIT0                       
+C:   00000008  l_REG_BANK_0                    
+C:   00000008  s_REG_BANK_1                    
+C:   0000000A  l_GSINIT2                       
+C:   0000000A  l_XINIT                         
+C:   0000000A  l_XISEG                         
+C:   00000010  s_REG_BANK_2                    
+C:   00000011  l_HOME                          
+C:   00000011  s_GSINIT0                       
+C:   00000012  s_SSEG                          
+C:   00000014  s_GSINIT1                       
+C:   00000014  s_GSINIT2                       
+C:   00000018  s_BIT_BANK                      
+C:   00000018  s_OSEG                          
+C:   00000018  s_REG_BANK_3                    
+C:   0000001E  s_GSINIT3                       
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000020  s_BSEG_BYTES                    
+C:   00000020  s__CODE                         
+C:   00000022  l_GSINIT3                       
+C:   0000002A  l_GSINIT4                       
+C:   00000040  s_GSINIT4                       
+C:   0000006A  s_GSFINAL                       
+C:   0000006A  s_GSINIT                        
+C:   0000006A  s_GSINIT5                       
+C:   0000006D  s_CSEG                          
+C:   00000080  l_DSEG                          
+C:   000000A1  l_XSEG                          
+C:   000000A2  s_XISEG                         
+C:   000000EE  l_SSEG                          
+C:   00000100  l_IRAM                          
+C:   00000B92  l_CSEG                          
+C:   00000BFF  s_CONST                         
+C:   00000BFF  s_XINIT                         
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           _gptrput
+     00000080  _P0                                rf_spi_send_read_byte
+     00000080  _P0_SB_D0                          rf_spi_send_read_byte
+     00000081  _P0_SB_D1                          rf_spi_send_read_byte
+     00000081  _SP                                rf_spi_send_read_byte
+     00000082  _DPL                               rf_spi_send_read_byte
+     00000082  _P0_SB_D2                          rf_spi_send_read_byte
+     00000083  _DPH                               rf_spi_send_read_byte
+     00000083  _P0_SB_D3                          rf_spi_send_read_byte
+     00000084  _DPL1                              rf_spi_send_read_byte
+     00000084  _P0_SB_D4                          rf_spi_send_read_byte
+     00000085  _DPH1                              rf_spi_send_read_byte
+     00000085  _P0_SB_D5                          rf_spi_send_read_byte
+     00000086  _P0_SB_D6                          rf_spi_send_read_byte
+     00000087  _P0_SB_D7                          rf_spi_send_read_byte
+     00000087  _PCON                              rf_spi_send_read_byte
+     00000088  _TCON                              rf_spi_send_read_byte
+     00000088  _TCON_SB_IT0                       rf_spi_send_read_byte
+     00000089  _TCON_SB_IE0                       rf_spi_send_read_byte
+     00000089  _TMOD                              rf_spi_send_read_byte
+     0000008A  _TCON_SB_IT1                       rf_spi_send_read_byte
+     0000008A  _TL0                               rf_spi_send_read_byte
+     0000008B  _TCON_SB_IE1                       rf_spi_send_read_byte
+     0000008B  _TL1                               rf_spi_send_read_byte
+     0000008C  _TCON_SB_TR0                       rf_spi_send_read_byte
+     0000008C  _TH0                               rf_spi_send_read_byte
+     0000008D  _TCON_SB_TF0                       rf_spi_send_read_byte
+     0000008D  _TH1                               rf_spi_send_read_byte
+     0000008E  _TCON_SB_TR1                       rf_spi_send_read_byte
+     0000008F  _P3CON                             rf_spi_send_read_byte
+     0000008F  _TCON_SB_TF1                       rf_spi_send_read_byte
+     00000090  _P1                                rf_spi_send_read_byte
+     00000090  _P1_SB_D0                          rf_spi_send_read_byte
+     00000091  _P1_SB_D1                          rf_spi_send_read_byte
+     00000092  _DPS                               rf_spi_send_read_byte
+     00000092  _P1_SB_D2                          rf_spi_send_read_byte
+     00000093  _P0DIR                             rf_spi_send_read_byte
+     00000093  _P1_SB_D3                          rf_spi_send_read_byte
+     00000094  _P1DIR                             rf_spi_send_read_byte
+     00000094  _P1_SB_D4                          rf_spi_send_read_byte
+     00000095  _P1_SB_D5                          rf_spi_send_read_byte
+     00000095  _P2DIR                             rf_spi_send_read_byte
+     00000096  _P1_SB_D6                          rf_spi_send_read_byte
+     00000096  _P3DIR                             rf_spi_send_read_byte
+     00000097  _P1_SB_D7                          rf_spi_send_read_byte
+     00000097  _P2CON                             rf_spi_send_read_byte
+     00000098  _S0CON                             rf_spi_send_read_byte
+     00000098  _S0CON_SB_RI0                      rf_spi_send_read_byte
+     00000099  _S0BUF                             rf_spi_send_read_byte
+     00000099  _S0CON_SB_TI0                      rf_spi_send_read_byte
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000009A  _S0CON_SB_RB80                     rf_spi_send_read_byte
+     0000009B  _S0CON_SB_TB80                     rf_spi_send_read_byte
+     0000009C  _S0CON_SB_REN0                     rf_spi_send_read_byte
+     0000009D  _S0CON_SB_SM20                     rf_spi_send_read_byte
+     0000009E  _P0CON                             rf_spi_send_read_byte
+     0000009E  _S0CON_SB_SM1                      rf_spi_send_read_byte
+     0000009F  _P1CON                             rf_spi_send_read_byte
+     0000009F  _S0CON_SB_SM0                      rf_spi_send_read_byte
+     000000A0  _P2                                rf_spi_send_read_byte
+     000000A0  _P2_SB_D0                          rf_spi_send_read_byte
+     000000A1  _P2_SB_D1                          rf_spi_send_read_byte
+     000000A1  _PWMDC0                            rf_spi_send_read_byte
+     000000A2  _P2_SB_D2                          rf_spi_send_read_byte
+     000000A2  _PWMDC1                            rf_spi_send_read_byte
+     000000A3  _CLKCTRL                           rf_spi_send_read_byte
+     000000A3  _P2_SB_D3                          rf_spi_send_read_byte
+     000000A4  _P2_SB_D4                          rf_spi_send_read_byte
+     000000A4  _PWRDWN                            rf_spi_send_read_byte
+     000000A5  _P2_SB_D5                          rf_spi_send_read_byte
+     000000A5  _WUCON                             rf_spi_send_read_byte
+     000000A6  _INTEXP                            rf_spi_send_read_byte
+     000000A6  _P2_SB_D6                          rf_spi_send_read_byte
+     000000A7  _MEMCON                            rf_spi_send_read_byte
+     000000A7  _P2_SB_D7                          rf_spi_send_read_byte
+     000000A8  _IEN0                              rf_spi_send_read_byte
+     000000A8  _IEN0_SB_IFP                       rf_spi_send_read_byte
+     000000A9  _IEN0_SB_T0                        rf_spi_send_read_byte
+     000000A9  _IP0                               rf_spi_send_read_byte
+     000000AA  _IEN0_SB_POFIRQ                    rf_spi_send_read_byte
+     000000AA  _S0RELL                            rf_spi_send_read_byte
+     000000AB  _IEN0_SB_T1                        rf_spi_send_read_byte
+     000000AB  _RTC2CPT01                         rf_spi_send_read_byte
+     000000AC  _IEN0_SB_UART                      rf_spi_send_read_byte
+     000000AC  _RTC2CPT10                         rf_spi_send_read_byte
+     000000AD  _CLKLFCTRL                         rf_spi_send_read_byte
+     000000AD  _IEN0_SB_T2                        rf_spi_send_read_byte
+     000000AE  _OPMCON                            rf_spi_send_read_byte
+     000000AF  _IEN0_SB_GLOBAL                    rf_spi_send_read_byte
+     000000AF  _WDSV                              rf_spi_send_read_byte
+     000000B0  _P3                                rf_spi_send_read_byte
+     000000B0  _P3_SB_D0                          rf_spi_send_read_byte
+     000000B1  _P3_SB_D1                          rf_spi_send_read_byte
+     000000B1  _RSTREAS                           rf_spi_send_read_byte
+     000000B2  _P3_SB_D2                          rf_spi_send_read_byte
+     000000B2  _PWMCON                            rf_spi_send_read_byte
+     000000B3  _P3_SB_D3                          rf_spi_send_read_byte
+     000000B3  _RTC2CON                           rf_spi_send_read_byte
+     000000B4  _P3_SB_D4                          rf_spi_send_read_byte
+     000000B4  _RTC2CMP0                          rf_spi_send_read_byte
+     000000B5  _P3_SB_D5                          rf_spi_send_read_byte
+     000000B5  _RTC2CMP1                          rf_spi_send_read_byte
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000B6  _P3_SB_D6                          rf_spi_send_read_byte
+     000000B6  _RTC2CPT00                         rf_spi_send_read_byte
+     000000B7  _P3_SB_D7                          rf_spi_send_read_byte
+     000000B7  _SPISRDSZ                          rf_spi_send_read_byte
+     000000B8  _IEN1                              rf_spi_send_read_byte
+     000000B8  _IEN1_SB_RFRDY                     rf_spi_send_read_byte
+     000000B9  _IEN1_SB_RFIRQ                     rf_spi_send_read_byte
+     000000B9  _IP1                               rf_spi_send_read_byte
+     000000BA  _IEN1_SB_SPI_2WIRE                 rf_spi_send_read_byte
+     000000BA  _S0RELH                            rf_spi_send_read_byte
+     000000BB  _IEN1_SB_WUOPIRQ                   rf_spi_send_read_byte
+     000000BC  _IEN1_SB_MISCIRQ                   rf_spi_send_read_byte
+     000000BC  _SPISCON0                          rf_spi_send_read_byte
+     000000BD  _IEN1_SB_TICK                      rf_spi_send_read_byte
+     000000BD  _SPISCON1                          rf_spi_send_read_byte
+     000000BE  _SPISSTAT                          rf_spi_send_read_byte
+     000000BF  _IEN1_SB_T2EXTRLD                  rf_spi_send_read_byte
+     000000BF  _SPISDAT                           rf_spi_send_read_byte
+     000000C0  _IRCON                             rf_spi_send_read_byte
+     000000C0  _IRCON_SB_RFRDY                    rf_spi_send_read_byte
+     000000C1  _CCEN                              rf_spi_send_read_byte
+     000000C1  _IRCON_SB_RFIRQ                    rf_spi_send_read_byte
+     000000C2  _CCL1                              rf_spi_send_read_byte
+     000000C2  _IRCON_SB_SPI_2WIRE                rf_spi_send_read_byte
+     000000C3  _CCH1                              rf_spi_send_read_byte
+     000000C3  _IRCON_SB_WUOPIRQ                  rf_spi_send_read_byte
+     000000C4  _CCL2                              rf_spi_send_read_byte
+     000000C4  _IRCON_SB_MISCIRQ                  rf_spi_send_read_byte
+     000000C5  _CCH2                              rf_spi_send_read_byte
+     000000C5  _IRCON_SB_TICK                     rf_spi_send_read_byte
+     000000C6  _CCL3                              rf_spi_send_read_byte
+     000000C6  _IRCON_SB_TF2                      rf_spi_send_read_byte
+     000000C7  _CCH3                              rf_spi_send_read_byte
+     000000C7  _IRCON_SB_EXF2                     rf_spi_send_read_byte
+     000000C8  _T2CON                             rf_spi_send_read_byte
+     000000C8  _T2CON_SB_T2I0                     rf_spi_send_read_byte
+     000000C9  _MPAGE                             rf_spi_send_read_byte
+     000000C9  _T2CON_SB_T2I1                     rf_spi_send_read_byte
+     000000C9  __XPAGE                            rf_spi_send_read_byte
+     000000CA  _CRCL                              rf_spi_send_read_byte
+     000000CA  _T2CON_SB_T2CM                     rf_spi_send_read_byte
+     000000CB  _CRCH                              rf_spi_send_read_byte
+     000000CB  _T2CON_SB_T2R0                     rf_spi_send_read_byte
+     000000CC  _T2CON_SB_T2R1                     rf_spi_send_read_byte
+     000000CC  _TL2                               rf_spi_send_read_byte
+     000000CD  _T2CON_SB_I2FR                     rf_spi_send_read_byte
+     000000CD  _TH2                               rf_spi_send_read_byte
+     000000CE  _T2CON_SB_I3FR                     rf_spi_send_read_byte
+     000000CE  _WUOPC1                            rf_spi_send_read_byte
+     000000CF  _T2CON_SB_T2PS                     rf_spi_send_read_byte
+     000000CF  _WUOPC0                            rf_spi_send_read_byte
+ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000D0  _PSW                               rf_spi_send_read_byte
+     000000D0  _PSW_SB_P                          rf_spi_send_read_byte
+     000000D1  _ADCCON3                           rf_spi_send_read_byte
+     000000D1  _PSW_SB_F1                         rf_spi_send_read_byte
+     000000D2  _ADCCON2                           rf_spi_send_read_byte
+     000000D2  _PSW_SB_OV                         rf_spi_send_read_byte
+     000000D3  _ADCCON1                           rf_spi_send_read_byte
+     000000D3  _PSW_SB_RS0                        rf_spi_send_read_byte
+     000000D4  _ADCDATH                           rf_spi_send_read_byte
+     000000D4  _PSW_SB_RS1                        rf_spi_send_read_byte
+     000000D5  _ADCDATL                           rf_spi_send_read_byte
+     000000D5  _PSW_SB_F0                         rf_spi_send_read_byte
+     000000D6  _PSW_SB_AC                         rf_spi_send_read_byte
+     000000D6  _RNGCTL                            rf_spi_send_read_byte
+     000000D7  _PSW_SB_CY                         rf_spi_send_read_byte
+     000000D7  _RNGDAT                            rf_spi_send_read_byte
+     000000D8  _ADCON                             rf_spi_send_read_byte
+     000000D9  _W2SADR                            rf_spi_send_read_byte
+     000000DA  _W2DAT                             rf_spi_send_read_byte
+     000000DB  _COMPCON                           rf_spi_send_read_byte
+     000000DC  _POFCON                            rf_spi_send_read_byte
+     000000DD  _CCPDATIA                          rf_spi_send_read_byte
+     000000DE  _CCPDATIB                          rf_spi_send_read_byte
+     000000DF  _ADCON_SB_BD                       rf_spi_send_read_byte
+     000000DF  _CCPDATO                           rf_spi_send_read_byte
+     000000E0  _ACC                               rf_spi_send_read_byte
+     000000E1  _W2CON1                            rf_spi_send_read_byte
+     000000E2  _W2CON0                            rf_spi_send_read_byte
+     000000E4  _SPIRCON0                          rf_spi_send_read_byte
+     000000E5  _SPIRCON1                          rf_spi_send_read_byte
+     000000E6  _SPIRSTAT                          rf_spi_send_read_byte
+     000000E7  _SPIRDAT                           rf_spi_send_read_byte
+     000000E8  _RFCON                             rf_spi_send_read_byte
+     000000E8  _RFCON_SB_RFCE                     rf_spi_send_read_byte
+     000000E9  _MD0                               rf_spi_send_read_byte
+     000000E9  _RFCON_SB_RFCSN                    rf_spi_send_read_byte
+     000000EA  _MD1                               rf_spi_send_read_byte
+     000000EA  _RFCON_SB_RFCKEN                   rf_spi_send_read_byte
+     000000EB  _MD2                               rf_spi_send_read_byte
+     000000EC  _MD3                               rf_spi_send_read_byte
+     000000ED  _MD4                               rf_spi_send_read_byte
+     000000EE  _MD5                               rf_spi_send_read_byte
+     000000EF  _ARCON                             rf_spi_send_read_byte
+     000000F0  _B                                 rf_spi_send_read_byte
+     000000F5  _B_5                               _gptrput
+     000000F6  _B_6                               _gptrput
+     000000F7  _B_7                               _gptrput
+     000000F8  _FSR                               rf_spi_send_read_byte
+     000000F9  _FPCR                              rf_spi_send_read_byte
+     000000FA  _FCR                               rf_spi_send_read_byte
+     000000FA  _FSR_SB_RDISMB                     rf_spi_send_read_byte
+ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000FB  _FSR_SB_INFEN                      rf_spi_send_read_byte
+     000000FC  _FSR_SB_RDYN                       rf_spi_send_read_byte
+     000000FC  _SPIMCON0                          rf_spi_send_read_byte
+     000000FD  _FSR_SB_WEN                        rf_spi_send_read_byte
+     000000FD  _SPIMCON1                          rf_spi_send_read_byte
+     000000FE  _FSR_SB_STP                        rf_spi_send_read_byte
+     000000FE  _SPIMSTAT                          rf_spi_send_read_byte
+     000000FF  _FSR_SB_ENDBG                      rf_spi_send_read_byte
+     000000FF  _SPIMDAT                           rf_spi_send_read_byte
+     00008C8A  _T0                                rf_spi_send_read_byte
+     00008D8B  _T1                                rf_spi_send_read_byte
+     0000BAAA  _S0REL                             rf_spi_send_read_byte
+     0000C3C2  _CC1                               rf_spi_send_read_byte
+     0000C5C4  _CC2                               rf_spi_send_read_byte
+     0000C7C6  _CC3                               rf_spi_send_read_byte
+     0000CBCA  _CRC                               rf_spi_send_read_byte
+     0000CDCC  _T2                                rf_spi_send_read_byte
+     0000D4D5  _ADCDAT                            rf_spi_send_read_byte
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+REG_BANK_0                          00000000    00000008 =           8. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+DSEG                                00000000    00000080 =         128. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+SSEG                                00000012    000000EE =         238. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000012  __start__stack                     main
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+XSEG                                00000001    000000A1 =         161. bytes (REL,CON,XDATA)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+D:   00000001  _uvValue                           main
+D:   00000005  _brightValue                       main
+D:   00000009  _outMsg                            main
+D:   0000002A  _inMsg                             main
+D:   0000004C  _BuildApollonMessage_PARM_2        main
+D:   00000050  _BuildApollonMessage_PARM_3        main
+D:   00000055  _write_buf_PARM_2                  main
+D:   00000056  _write_buf_PARM_3                  main
+D:   00000057  _RF24write_PARM_2                  main
+D:   0000005A  _RF24write_PARM_3                  main
+D:   0000005B  _RF24write_PARM_4                  main
+D:   0000006F  _rf_read_rx_payload_PARM_2         rf_read_rx_payload
+D:   00000074  _rf_write_register_PARM_2          rf_write_register
+D:   00000077  _rf_write_register_PARM_3          rf_write_register
+D:   0000007A  _rf_set_rx_addr_PARM_2             rf_set_rx_addr
+D:   0000007C  _rf_set_rx_addr_PARM_3             rf_set_rx_addr
+D:   00000080  _rf_set_tx_addr_PARM_2             rf_set_tx_addr
+D:   00000085  _timer0_configure_PARM_2           timer0_configure
+D:   00000088  _rf_spi_execute_command_PARM_2     rf_spi_execute_command
+D:   0000008B  _rf_spi_execute_command_PARM_3     rf_spi_execute_command
+D:   0000008D  _rf_spi_execute_command_PARM_4     rf_spi_execute_command
+D:   00000090  _gpio_pin_configure_PARM_2         gpio_pin_configure
+D:   00000092  _rf_power_up_param_PARM_2          rf_power_up_param
+D:   00000095  _rf_spi_send_read_PARM_2           rf_spi_send_read
+D:   00000097  _rf_spi_send_read_PARM_3           rf_spi_send_read
+D:   000000A1  __gptrput_PARM_2                   _gptrput
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+XISEG                               000000A2    0000000A =          10. bytes (REL,CON,XDATA)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+D:   000000A2  _base_addr                         main
+D:   000000A7  _ml                                main
+D:   000000AB  _mcs                               main
+ASxxxx Linker V03.00 + NoICE + sdld,  page 13.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+HOME                                00000000    00000011 =          17. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000000E  __sdcc_program_startup             main
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 14.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT0                             00000011    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000011  __sdcc_gsinit_startup              
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 15.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT2                             00000014    0000000A =          10. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 16.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT3                             0000001E    00000022 =          34. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000001E  __mcs51_genXINIT                   
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 17.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT4                             00000040    0000002A =          42. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000040  __mcs51_genRAMCLEAR                
+C:   00000046  __mcs51_genXRAMCLEAR               
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 18.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSFINAL                             0000006A    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 19.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                0000006D    00000B92 =        2962. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000006D  _isrINTERRUPT_VECTOR_T0            main
+C:   000000B4  _BuildMessage                      main
+C:   000000C6  _BuildApollonMessage               main
+C:   0000011C  _flush_fifo_irq                    main
+C:   00000153  _RF24write                         main
+C:   0000029E  _RF24readMessage                   main
+C:   0000030E  _process_rx                        main
+C:   0000034C  _process_time                      main
+C:   000003C1  _process_type                      main
+C:   0000042B  _SendMessage                       main
+C:   00000458  _main                              main
+C:   00000648  _rf_read_rx_payload_width          rf_read_rx_payload_width
+C:   00000682  _rf_read_rx_payload                rf_read_rx_payload
+C:   000006C4  _rf_write_register                 rf_write_register
+C:   00000702  _rf_set_rx_addr                    rf_set_rx_addr
+C:   0000074B  _rf_set_tx_addr                    rf_set_tx_addr
+C:   00000787  _rf_spi_configure_enable           rf_spi_configure_enable
+C:   0000078E  _timer0_configure                  timer0_configure
+C:   000007C1  _rf_spi_execute_command            rf_spi_execute_command
+C:   0000081D  _gpio_pin_configure                gpio_pin_configure
+C:   00000A11  _rf_power_up_param                 rf_power_up_param
+C:   00000A68  _rf_irq_clear_all                  rf_irq_clear_all
+C:   00000A8C  _rf_spi_send_read                  rf_spi_send_read
+C:   00000B1F  _adc_configure                     adc_configure
+C:   00000B52  _pwr_clk_mgmt_clklf_configure      pwr_clk_mgmt_clklf_configure
+C:   00000B66  _delay_us                          delay_us
+C:   00000BB0  _rf_spi_send_read_byte             rf_spi_send_read_byte
+C:   00000BC4  __gptrget                          _gptrget
+C:   00000BE0  __sdcc_external_startup            _startup
+C:   00000BE4  __gptrput                          _gptrput
+ASxxxx Linker V03.00 + NoICE + sdld,  page 20.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+XINIT                               00000BFF    0000000A =          10. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 21.
+
+Files Linked                              [ module(s) ]
+
+main.rel                                  [  ]
+
+
+Libraries Linked                          [ object file ]
+
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ rf_read_rx_payload_width ]
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ rf_read_rx_payload ]
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ rf_write_register ]
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ rf_set_rx_addr ]
+c:\Program Files (x86)\SDCC\bin\..\lib\large/mcs51.lib
+                                          [ crtclear.rel ]
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ rf_set_tx_addr ]
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ rf_spi_configure_enable ]
+c:\Program Files (x86)\SDCC\bin\..\lib\large/mcs51.lib
+                                          [ crtxinit.rel ]
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ timer0_configure ]
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ rf_spi_execute_command ]
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ gpio_pin_configure ]
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ rf_power_up_param ]
+c:\Program Files (x86)\SDCC\bin\..\lib\large/mcs51.lib
+                                          [ crtxclear.rel ]
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ rf_irq_clear_all ]
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ rf_spi_send_read ]
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ adc_configure ]
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ pwr_clk_mgmt_clklf_configure ]
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ delay_us ]
+../nRF24LE1_SDK/_target_sdcc_nrf24le1_32/lib/nrf24le1.lib
+                                          [ rf_spi_send_read_byte ]
+c:\Program Files (x86)\SDCC\bin\..\lib\large/mcs51.lib
+                                          [ crtstart.rel ]
+c:\Program Files (x86)\SDCC\bin\..\lib\large/libsdcc.lib
+                                          [ _gptrget.rel ]
+c:\Program Files (x86)\SDCC\bin\..\lib\large/libsdcc.lib
+                                          [ _startup.rel ]
+c:\Program Files (x86)\SDCC\bin\..\lib\large/libsdcc.lib
+                                          [ _gptrput.rel ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 22.
+
+User Base Address Definitions
+
+HOME = 0x0000
+XSEG = 0x0001
+PSEG = 0x0001
+ISEG = 0x0000
+BSEG = 0x0000
+
+

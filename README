@@ -1,0 +1,24 @@
+Notre specification et conception ne sont peut-etre pas à jour mais vous permettront de vous faire une idée. 
+
+Sur la Raspberry, on a une base de données plus notre script php qui permet de prendre les données envoyé par la centrale (Nucleus) vers notre base de données.
+
+Le code de notre application Android est dans Poseidon, elle récupere les données depuis la BDD.
+
+Le code de notre carte centrale sur l'ESP est dispo dans Nucleus, il n'est pas terminé. Nous ne gerons pas la caméra et autres capteurs de la centrale.
+
+Le code des noeuds de capteurs n'est pas totalement fonctionnel, nous ne recuperons pas les valeurs pour le moment. Mais le début des MAE et l'architecture logiciel ont commencé à etre implémenté dans Nodes. (Apollon est le noeud le plus avancé des 4).
+Dans working_example il y a la partie du code (qui est sur les noeuds) permettant d'envoyer des données à la centrale. Il faut prendre ce code et l'adapté dans les MAE pour avoir un système fonctionnel. Les MAE de la conception ne sont pas corrects, regardez plutot celles dans le code.
+
+Coté electronique il est possible que plusieurs composants de fonctionne pas. Les cartes sont à re-vérifier. 
+
+
+Pour résumer il reste à :
+
+- Vérifier l'electronique, voire refaire les cartes noeuds si elles ne sont pas fonctionnelles.
+
+- Faire la carte centrale avec caméra, capteur de poussière etc. ainsi que terminer son code en se basant sur le code Nucleus.
+
+- Adapter le code des noeuds avec la transmission (déjà fonctionnelle dans working_example) avec les MAE commencées. Pour résumer ces deux dernières taches en plusieurs étapes :
+    - Se documenter et implémenter la gestion du sommeil sur la carte (commencée)
+    - Se documenter et implémenter la récupération des données des différents capteurs en I2C/SPI (ou autre ?)
+    - Vérifier qu'il ne manque rien d'autre puis tester
